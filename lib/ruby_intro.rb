@@ -12,8 +12,8 @@ end
 
 def max_2_sum arr
   # YOUR CODE HERE
-  max_max=-999999;
-  max_min=-999999;
+  max_max= -(2**(0.size*8 -2));
+  max_min= -(2**(0.size*8 -2));
   return 0 if (arr.length == 0);
   return arr[0] if (arr.length == 1);
   arr.each do |value|
@@ -47,7 +47,7 @@ end
 
 def starts_with_consonant? s
   # YOUR CODE HERE
-  return false if (s=~/^[aeiou]/i ||  (!(s=~ /^\w/)) );
+  return false if (s=~/^[aeiou]/i || (!(s=~ /^[A-Za-z]/)) );
   return true;
 end
 
